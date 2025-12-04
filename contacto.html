@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Priscila Rupcic - Desarrolladora Frontend</title>
+  <meta name="description"
+    content="Ponete en contacto con Priscila Rupcic, desarrolladora web frontend especializada en sitios modernos y responsivos.">
+
+  <!-- SEO general -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Priscila Rupcic">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.priscilarupcic.com/contacto">
+  <meta property="og:title" content="Contacto - Priscila Rupcic">
+  <meta property="og:description" content="Ponete en contacto para proyectos de desarrollo web frontend.">
+  <meta property="og:image" content="https://www.priscilarupcic.com/images/yo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Contacto - Priscila Rupcic">
+  <meta property="twitter:description" content="Ponete en contacto para proyectos de desarrollo web frontend.">
+  <meta property="twitter:image" content="https://www.priscilarupcic.com/images/yo.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.priscilarupcic.com/contacto">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Priscila Rupcic",
+  "jobTitle": "Desarrolladora Web Frontend",
+  "url": "https://www.priscilarupcic.com",
+  "sameAs": [
+    "https://github.com/priscilarup",
+    "https://www.linkedin.com/in/priscilarupcic"
+  ],
+  "email": "priscilarupcic@gmail.com",
+  "telephone": "+5492645674041",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mendoza",
+    "addressCountry": "AR"
+  }
+}
+  </script>
+</head>
+
+<body>
+      <!-- NAVBAR -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    
+    <!-- SOLO LA IMAGEN -->
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Logo de Priscila Rupcic">
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="Menú">
+      <i class="bi bi-list"></i>
+    </button>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html" class="nav-cta"><i class="bi bi-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+    <!-- CONTACTO -->
+  <section id="contacto" class="contact-section py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title-white">
+          <i class="bi bi-envelope-paper"></i> Contacto
+        </h2>
+        <p class="lead-white">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3><i class="bi bi-telephone"></i> Información de Contacto</h3>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="bi bi-envelope-fill"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:priscilarupcic@gmail.com">priscilarupcic@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="bi bi-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/5492645674041" target="_blank">+54 9 264 567 4041</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Mendoza, Argentina</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <i class="bi bi-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/priscilarup" target="_blank">priscilarup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Tu nombre *</label>
+              <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Tu email *</label>
+              <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tu mensaje *</label>
+              <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="bi bi-send"></i> Enviar mensaje
+            </button>
+
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h6><i class="bi bi-code-slash"></i> Priscila Rupcic</h6>
+          <p>Desarrolladora Web Frontend</p>
+          <p style="margin-top: 15px; opacity: 0.8;">
+            Creando experiencias web modernas, funcionales y accesibles.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h6>Enlaces</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h6>Contacto</h6>
+          <p><a href="mailto:priscilarupcic@gmail.com"><i class="bi bi-envelope"></i> Email</a></p>
+          <p><a href="https://wa.me/5492645674041" target="_blank"><i class="bi bi-whatsapp"></i> WhatsApp</a></p>
+          <p><a href="https://github.com/priscilarup" target="_blank"><i class="bi bi-github"></i> GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/priscilarupcic" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="footer-credit">© 2025 Priscila Rupcic | Desarrolladora Web Frontend | Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
